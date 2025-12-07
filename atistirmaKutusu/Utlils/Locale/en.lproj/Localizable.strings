@@ -5,3 +5,7 @@
   Created by tuğba berk on 3.12.2025.
   
 */
+"signInaFacebook" = "Sign In with Facebook";
+"signInaGoogle" = "Sign In with Google";
+"signInaApple" = "Sign In with Apple";
+"signInaWithEmail" = "Sign Up with Email";

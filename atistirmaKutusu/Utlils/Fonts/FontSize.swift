@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct FontSize{
+    static var headline: CGFloat = 16
+}
