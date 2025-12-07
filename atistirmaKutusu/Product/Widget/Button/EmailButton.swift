@@ -21,14 +21,14 @@ struct EmailButton: View {
                   
                 Spacer()
             }
-            .tint(.Peach)
+            .tint(.white)
             .font(.system(size:FontSize.headline,weight:.semibold ))
             .padding(.all,PagePadding.All.normalPadding.rawValue)
            
             
         }.buttonBorderShape(.roundedRectangle)
             .controlSize(.large)
-            .background(Color.white)
+            .background(Color.peace1)
             .cornerRadius(RadiusItems.radius)
     }
 }
