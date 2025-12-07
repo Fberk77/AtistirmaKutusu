@@ -1,8 +1,6 @@
 import SwiftUI
 
-public enum StringItems: String {
-    case focebokLogin = "Facebook İle Giriş Yap"
-}
+
 
 
 struct WelcomeView: View {
