@@ -18,7 +18,17 @@ struct LocalKeys {
         case apple = "signInaApple"
         case email = "signInaWithEmail"
     }
+    
+    
+    enum OnBoardView: String {
+        // Her case, Localizable.strings dosyasındaki bir anahtara karşılık gelir
+        case getStarted = "Get Started"
+      
+    }
+
 }
+
+
 
 // String'e ekstra özellik ekliyoruz
 extension String {

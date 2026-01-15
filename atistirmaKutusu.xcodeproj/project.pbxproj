@@ -26,6 +26,8 @@
 		885C6F1B2EE04FC900809B02 /* Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C6F1A2EE04FC900809B02 /* Radius.swift */; };
 		885C6F1D2EE0616D00809B02 /* AppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C6F1C2EE0616D00809B02 /* AppleButton.swift */; };
 		885C6F1F2EE063DA00809B02 /* EmailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C6F1E2EE063DA00809B02 /* EmailButton.swift */; };
+		888D3BAB2EEABCEB0079AB9A /* OnBordeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D3BAA2EEABCEB0079AB9A /* OnBordeModel.swift */; };
+		888D3BAE2EEAC96F0079AB9A /* ViewSizeHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D3BAD2EEAC96F0079AB9A /* ViewSizeHeight.swift */; };
 		88A5D47D2EE2E22D00075CBA /* ViewSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A5D47C2EE2E22D00075CBA /* ViewSize.swift */; };
 		88A5D4802EE5536D00075CBA /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A5D47F2EE5536D00075CBA /* FontSize.swift */; };
 		88A5D4832EE55E4A00075CBA /* DynamicSizeGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A5D4822EE55E4A00075CBA /* DynamicSizeGeometry.swift */; };
@@ -54,6 +56,8 @@
 		885C6F1A2EE04FC900809B02 /* Radius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radius.swift; sourceTree = "<group>"; };
 		885C6F1C2EE0616D00809B02 /* AppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleButton.swift; sourceTree = "<group>"; };
 		885C6F1E2EE063DA00809B02 /* EmailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailButton.swift; sourceTree = "<group>"; };
+		888D3BAA2EEABCEB0079AB9A /* OnBordeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBordeModel.swift; sourceTree = "<group>"; };
+		888D3BAD2EEAC96F0079AB9A /* ViewSizeHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSizeHeight.swift; sourceTree = "<group>"; };
 		88A5D47C2EE2E22D00075CBA /* ViewSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSize.swift; sourceTree = "<group>"; };
 		88A5D47F2EE5536D00075CBA /* FontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
 		88A5D4822EE55E4A00075CBA /* DynamicSizeGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicSizeGeometry.swift; sourceTree = "<group>"; };
@@ -219,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				88A5D47C2EE2E22D00075CBA /* ViewSize.swift */,
+				888D3BAD2EEAC96F0079AB9A /* ViewSizeHeight.swift */,
 			);
 			path = Size;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				88A5D4882EE589FE00075CBA /* OnBoardView.swift */,
+				888D3BAA2EEABCEB0079AB9A /* OnBordeModel.swift */,
 			);
 			path = OnBoard;
 			sourceTree = "<group>";
@@ -323,6 +329,7 @@
 				88A5D4892EE589FE00075CBA /* OnBoardView.swift in Sources */,
 				88A5D48B2EE58E1A00075CBA /* normalButton.swift in Sources */,
 				885C6F152EE0335D00809B02 /* LocalKeys.swift in Sources */,
+				888D3BAE2EEAC96F0079AB9A /* ViewSizeHeight.swift in Sources */,
 				885C6F022ED885B400809B02 /* Images.swift in Sources */,
 				885C6EFC2ED87FBF00809B02 /* WelcomeView.swift in Sources */,
 				88A5D47D2EE2E22D00075CBA /* ViewSize.swift in Sources */,
@@ -331,6 +338,7 @@
 				885C6F0F2EDF1E4200809B02 /* EdgeInsets.swift in Sources */,
 				885C6EE82ED87D0E00809B02 /* atistirmaKutusuApp.swift in Sources */,
 				885C6F1B2EE04FC900809B02 /* Radius.swift in Sources */,
+				888D3BAB2EEABCEB0079AB9A /* OnBordeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

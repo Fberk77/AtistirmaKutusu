@@ -10,3 +10,4 @@ import Foundation
 struct DividerViewSize {
    static let Dividernormal:CGFloat = 2
 }
+
