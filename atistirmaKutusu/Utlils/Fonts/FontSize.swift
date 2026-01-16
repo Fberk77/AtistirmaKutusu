@@ -10,5 +10,7 @@ import Foundation
 struct FontSize{
     static var headline: CGFloat = 16
     static var largeTitle: CGFloat = 34
-
+    static var loginTitle: CGFloat = 28
+    static var caption1: CGFloat = 12
+    
 }

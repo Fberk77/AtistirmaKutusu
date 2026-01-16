@@ -12,5 +12,15 @@
 
 //Button
 
-"getStarted"="Get Started";
+"getStarted" = "Get Started";
 
+//Login
+
+"welcomeBack" = "Welcome Back";
+"createaccount" = "Create an account";
+"termsAndCondition" = "By clicking\"Create Account\",I agree to Atıştırma Kutusu [TOS](WWW.com.vb) and [Privacy Policy.](www.com.vb)";
+
+// General
+
+"emailHint" = "Write your email";
+"passwordHint" = "Write your password";

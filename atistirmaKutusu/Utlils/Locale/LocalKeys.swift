@@ -25,6 +25,21 @@ struct LocalKeys {
         case getStarted = "Get Started"
       
     }
+    
+    enum Login: String {
+        case welcomeBack = "welcomeBack"
+        case Createaccount = "createaccount"
+        case TermsAndCondition = "termsAndCondition"
+        
+    }
+
+    
+    enum General: String {
+        case EmailHint = "emailHint"
+        case PasswordHint = "passwordHint"
+      
+    }
+    
 
 }
 

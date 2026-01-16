@@ -23,4 +23,5 @@ struct PagePadding {
     enum Horizontal: CGFloat {
          case normalHorizontal = 24 // normalHorizontal = 24 → Uygulamada sık kullanılan standart boşluk miktarı.
      }
+    
 }
