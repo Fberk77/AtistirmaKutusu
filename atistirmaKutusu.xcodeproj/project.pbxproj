@@ -35,6 +35,8 @@
 		88A5D4832EE55E4A00075CBA /* DynamicSizeGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A5D4822EE55E4A00075CBA /* DynamicSizeGeometry.swift */; };
 		88A5D4892EE589FE00075CBA /* OnBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A5D4882EE589FE00075CBA /* OnBoardView.swift */; };
 		88A5D48B2EE58E1A00075CBA /* normalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A5D48A2EE58E1A00075CBA /* normalButton.swift */; };
+		88AADAEE2F1E16FF0070D116 /* OnBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AADAED2F1E16FF0070D116 /* OnBoardViewModel.swift */; };
+		88AADAF12F1E1F0C0070D116 /* UserCacheItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AADAF02F1E1F0C0070D116 /* UserCacheItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		88A5D4822EE55E4A00075CBA /* DynamicSizeGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicSizeGeometry.swift; sourceTree = "<group>"; };
 		88A5D4882EE589FE00075CBA /* OnBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardView.swift; sourceTree = "<group>"; };
 		88A5D48A2EE58E1A00075CBA /* normalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = normalButton.swift; sourceTree = "<group>"; };
+		88AADAED2F1E16FF0070D116 /* OnBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardViewModel.swift; sourceTree = "<group>"; };
+		88AADAF02F1E1F0C0070D116 /* UserCacheItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCacheItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 		885C6EF82ED87F0100809B02 /* Utlils */ = {
 			isa = PBXGroup;
 			children = (
+				88AADAEF2F1E1EA50070D116 /* Cache */,
 				881467842F1A35B300AB7C7E /* ViewModifers */,
 				88A5D47E2EE5534100075CBA /* Fonts */,
 				885C6F102EE02DB000809B02 /* Locale */,
@@ -265,8 +270,17 @@
 			children = (
 				88A5D4882EE589FE00075CBA /* OnBoardView.swift */,
 				888D3BAA2EEABCEB0079AB9A /* OnBordeModel.swift */,
+				88AADAED2F1E16FF0070D116 /* OnBoardViewModel.swift */,
 			);
 			path = OnBoard;
+			sourceTree = "<group>";
+		};
+		88AADAEF2F1E1EA50070D116 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				88AADAF02F1E1F0C0070D116 /* UserCacheItems.swift */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +361,7 @@
 				885C6F192EE04DCA00809B02 /* PagePadding.swift in Sources */,
 				885C6F1D2EE0616D00809B02 /* AppleButton.swift in Sources */,
 				88A5D4832EE55E4A00075CBA /* DynamicSizeGeometry.swift in Sources */,
+				88AADAF12F1E1F0C0070D116 /* UserCacheItems.swift in Sources */,
 				885C6EEA2ED87D0E00809B02 /* ContentView.swift in Sources */,
 				885C6F0D2ED9AD6100809B02 /* FacebookButton.swift in Sources */,
 				885C6F172EE044AE00809B02 /* GoogleButton.swift in Sources */,
@@ -360,6 +375,7 @@
 				885C6EFC2ED87FBF00809B02 /* WelcomeView.swift in Sources */,
 				88A5D47D2EE2E22D00075CBA /* ViewSize.swift in Sources */,
 				88A5D4802EE5536D00075CBA /* FontSize.swift in Sources */,
+				88AADAEE2F1E16FF0070D116 /* OnBoardViewModel.swift in Sources */,
 				885C6F1F2EE063DA00809B02 /* EmailButton.swift in Sources */,
 				885C6F0F2EDF1E4200809B02 /* EdgeInsets.swift in Sources */,
 				885C6EE82ED87D0E00809B02 /* atistirmaKutusuApp.swift in Sources */,

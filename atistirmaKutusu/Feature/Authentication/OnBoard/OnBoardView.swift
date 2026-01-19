@@ -9,54 +9,52 @@ import SwiftUI
 
 struct OnBoardView: View {
     
-   private  func count() -> Int{
-        OnBordeModel.items.count - 1
-    }
-    
-    @State var currentIndex: Int = 0
-    
-    
+    @StateObject var onBoardViewModel = OnBoardViewModel()
+    @StateObject var onBoardSayfaGecis = OnBoardSayfaGecis()
     var body: some View {
         
-        GeometryReader { geomtry in
-            
-            VStack { // dikeyde sıralar
-                Spacer()
-                TabView(selection: $currentIndex,
-                content: {
-                    ForEach((0...count()), id: \.self) {
-                        
-                        value in
-                        SlenderCard(
-                            imageHeight:
-                                geomtry.heightProxy(height: 0.45),
-                                model: OnBordeModel.items[value]
-                        )
-                        
-                    }
-                })
-                .tabViewStyle(.page(indexDisplayMode: .never))
-
+        NavigationView {
+            GeometryReader { geomtry in
                 
-                
-                Spacer()
-                HStack {
-                    ForEach((0...count()), id: \.self)  { index in
-                        if index == currentIndex {
-                            IndicatorRectangle(width:
-                                                geomtry.widthProxy(width:0.05))
-                        } else {
-                            IndicatorRectangle(width:
-                                                geomtry.widthProxy(width:0.02))
+                VStack { // dikeyde sıralar
+                    Spacer()
+                    TabView(selection: $onBoardViewModel.currentIndex,
+                            content: {
+                        ForEach(OnBordeModel.items.indices, id: \.self) { index in
+                            SlenderCard(
+                                imageHeight: geomtry.heightProxy(height: 0.45),
+                                model: OnBordeModel.items[index]
+                            )
+                        }
+                    })
+                    .tabViewStyle(.page(indexDisplayMode: .never))
+                    
+                    
+                    
+                    Spacer()
+                    HStack {
+                        ForEach(OnBordeModel.items.indices, id: \.self) { index in
+                            if index == onBoardViewModel.currentIndex {
+                                IndicatorRectangle(width: geomtry.widthProxy(width: 0.05))
+                            } else {
+                                IndicatorRectangle(width: geomtry.widthProxy(width: 0.02))
+                            }
                         }
                     }
+                    .frame(height: ViewSizeHeight.indicator)
+                    
+                    
+                   
+                    NavigationLink( isActive: $onBoardViewModel.isHomeRedirect){
+                        WelcomeView()
+                            .navigationBarHidden(true)
+                            .ignoresSafeArea(.all)
+                    }label: {
+                        normalButton(onTap: {onBoardViewModel.saveUserloginAndRedirect()},
+                                     title:LocalKeys.OnBoardView.getStarted.rawValue)
+                            .padding(.all, PagePadding.All.normalPadding.rawValue) // ekramım genel olarak yandan ne kadar boşluk olduğunu ayarladık
+                    }
                 }
-                .frame(height: ViewSizeHeight.indicator)
-
-                
-                normalButton(onTap: {}, title: LocalKeys.OnBoardView.getStarted.rawValue)
-                    .padding(.all, PagePadding.All.normalPadding.rawValue) // ekramım genel olarak yandan ne kadar boşluk olduğunu ayarladık
-                
             }
         }
     }
@@ -91,3 +89,4 @@ struct IndicatorRectangle: View {
     OnBoardView()
         
 }
+
