@@ -11,7 +11,7 @@ import SwiftUI
 struct atistirmaKutusuApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Login()
         }
     }
 }

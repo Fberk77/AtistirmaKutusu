@@ -24,3 +24,11 @@
 
 "emailHint" = "Write your email";
 "passwordHint" = "Write your password";
+
+//tab
+
+"tapHome" = "Home" ;
+"tapMarket" = "Market" ;
+"tapCrete" = "Crete" ;
+"tapWishlist" = "Wishlist" ;
+"tapAccount" = "Account" ;

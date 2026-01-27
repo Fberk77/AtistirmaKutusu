@@ -23,5 +23,12 @@ struct IconItems{
         case email = "ic_email"
         case lock = "ic_lock"
     }
+    
+    enum TabarIcon : String{
+        case home = "ic_home"
+        case edit = "ic_edit"
+        case market = "ic_market"
+        case person = "ic_person"
+    }
 
 }

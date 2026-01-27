@@ -40,6 +40,15 @@ struct LocalKeys {
       
     }
     
+   
+    enum Tabar: String {
+        case home = "tapHome"
+        case market = "tapMarket"
+        case crete = "tapCrete"
+        case wishlist = "tapWishlist"
+        case account = "tapAccount"
+    }
+    
 
 }
 
